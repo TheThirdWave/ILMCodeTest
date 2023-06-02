@@ -2,6 +2,20 @@ import json
 import argparse
 
 def load_dict(filepath):
+    # Loads a JSON file that contains a dictionary that contains a list of commands and priorities.
+    # The dict is structured like so:
+    # {
+    #   'commandList': [
+    #       {
+    #        "command": str,
+    #        "priority": int
+    #       },
+    #      {
+    #        "command": str,
+    #        "priority": int
+    #       }, ...
+    #   ]
+    # }
     dict = {}
     with open(filepath) as file:
         dict = json.load(file)
