@@ -44,7 +44,7 @@ def fill_priority_dict(commands_list, priority_dict):
         priority_dict[command['priority']].append(command['command'])
 
     # I do not believe I need to return this to update the priority_dict in the "sort_and_execute" function,
-    # but I believe doing so makes it more explicit about what "fill_dict" is actually doing
+    # but I believe doing so makes it more explicit about what "fill_priority_dict" is actually doing
     return priority_dict
 
 
