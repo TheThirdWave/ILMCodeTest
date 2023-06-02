@@ -10,18 +10,22 @@ def load_dict(filepath):
 
 
 def sort_and_execute(commands_list, num_priorities):
-    priority_dict = generate_priority_dict(num_priorities)
-    priority_dict = fill_dict(commands_list, priority_dict)
+    # Rather than make an actual queue for the "priority queue" I'm storing everything in a dictionary
+    # that has the priority numbers as keys and looping through that because I don't want to actually
+    # have to sort anything.
+    priority_dict = init_priority_dict(num_priorities)
+    priority_dict = fill_priority_dict(commands_list, priority_dict)
     execute_commands(priority_dict)
 
 
-def generate_priority_dict(num_priorities):
+def init_priority_dict(num_priorities):
     dict = {}
     for prio in range(num_priorities):
         dict[prio] = []
     return dict
 
-def fill_dict(commands_list, priority_dict):
+
+def fill_priority_dict(commands_list, priority_dict):
     for command in commands_list:
         priority_dict[command['priority']].append(command['command'])
 
