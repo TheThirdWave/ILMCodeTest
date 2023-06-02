@@ -1,0 +1,32 @@
+{
+    "commandList": [
+        {
+            "command": "command1",
+            "priority": 2
+        },
+        {
+            "command": "command3",
+            "priority": 3
+        },
+        {
+            "command": "command2",
+            "priority": 3
+        },
+        {
+            "command": "command4",
+            "priority": 10
+        },
+        {
+            "command": "command5",
+            "priority": 1
+        },
+        {
+            "command": "command6",
+            "priority": 1
+        },
+        {
+            "command": "commandultra",
+            "priority": 0
+        }
+    ]
+}

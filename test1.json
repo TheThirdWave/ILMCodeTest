@@ -1,0 +1,12 @@
+{
+    "commandList": [
+        {
+            "command": "command1",
+            "priority": 1
+        },
+        {
+            "command": "command2",
+            "priority": 1
+        }
+    ]
+}
